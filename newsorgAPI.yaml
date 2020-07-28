@@ -1,0 +1,44 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: '0.1'
+servers:
+  - url: 'https://newsapi.org'
+paths:
+  /v2/everything:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: q
+          in: query
+          schema:
+            type: string
+          example: apple
+        - name: apiKey
+          in: query
+          schema:
+            type: string
+          example: efa12c02cba74bcfbfc150cb9e9c4b3b
+        - name: from
+          in: query
+          schema:
+            type: string
+          example: '2020-07-12'
+        - name: sortBy
+          in: query
+          schema:
+            type: string
+          example: popularity
+        - name: to
+          in: query
+          schema:
+            type: string
+          example: '2020-07-12'
+      responses:
+        default:
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: 'https://newsapi.org'
+    servers:
+      - url: 'https://newsapi.org'
